@@ -17,7 +17,6 @@ func main() {
 	if lent == 3 {
 		banners = os.Args[2]
 	}
-
 	input := os.Args[1]
 
 	file, err := os.ReadFile(banners)
@@ -25,7 +24,6 @@ func main() {
 		fmt.Println("Error")
 		return
 	}
-
 	banner := strings.Split(string(file), "\n")
 
 	line := strings.Split(input, "\\n")
